@@ -1,0 +1,3 @@
+tosty, 300
+pizza, 100
+Suma kalorii = 400

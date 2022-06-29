@@ -1,0 +1,5 @@
+100mlkurczak, 80
+pizza, 100
+dupa, 200
+tosty, 300
+ryba, 999
