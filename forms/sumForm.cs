@@ -15,23 +15,36 @@ namespace Program.forms
     public partial class sumForm : Form
     {
         int calorie;
+        string[] catMenu;
+        int index;
 
         public sumForm()
         {
             InitializeComponent();
+            set();
 
-            label_Bmi.Text = DataUser.BMI.ToString();
-            label_Ztluszcz.Text = DataUser.ZawTl.ToString();
-            label_Waga.Text = DataUser.NalWaga.ToString();
-            label_Bmr.Text = DataUser.BMR.ToString();
+            index = 0;
             calorie = 0;
+            catMenu = new string[4];
 
-            Import();
+            setArray();
+            Import(catMenu[index]);
         }
 
-        private void Import()
+        private void setArray()
         {
-            System.IO.StreamReader sr = new System.IO.StreamReader("../../produkty/listProduct.txt");
+            catMenu[0] = "Sniadanie";
+            catMenu[1] = "Lekkie";
+            catMenu[2] = "Przekaski";
+            catMenu[3] = "Obiady";
+        }
+
+        private void Import(string path)
+        {
+            clear();
+            textBox2.Text = path;
+
+            System.IO.StreamReader sr = new System.IO.StreamReader("../../produkty/"+path+".txt");
 
             while (!sr.EndOfStream){
                 listBox1.Items.Add(sr.ReadLine());
@@ -79,6 +92,46 @@ namespace Program.forms
                 }
                 writetext.WriteLine("Suma kalorii = "+label_Suma.Text);
             }
+        }
+
+        private void set()
+        {
+            label_Bmi.Text = menuUserForm.SummaryUser.data1;
+            label_Ztluszcz.Text = menuUserForm.SummaryUser.data3;
+            label_Waga.Text = menuUserForm.SummaryUser.data4;
+            label_Bmr.Text = menuUserForm.SummaryUser.data8;
+
+            textBox1.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has " +
+                "been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley " +
+                "of type and scrambled it to make a type specimen book. It has survived not only five centuries, but ";
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            index++;
+
+            if (index == 4)
+                index = 0;
+
+            Import(catMenu[index]);
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            index--;
+
+            if (index == -1)
+                index = 3;
+
+            Import(catMenu[index]);
+        }
+
+        private void clear()
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            calorie = 0;
+            label_Suma.Text = "";
         }
     }
 }

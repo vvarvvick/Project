@@ -97,17 +97,137 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\bmiForm.cs">
+    <Compile Include="forms\calendar\diet\calendarAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\bmiForm.Designer.cs">
+    <Compile Include="forms\calendar\diet\calendarAdminForm.Designer.cs">
+      <DependentUpon>calendarAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\calendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\calendarForm.Designer.cs">
+      <DependentUpon>calendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\eventCalendarAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\eventCalendarAdminForm.Designer.cs">
+      <DependentUpon>eventCalendarAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\eventCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\eventCalendarForm.Designer.cs">
+      <DependentUpon>eventCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlDaysAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlDaysAdmin.Designer.cs">
+      <DependentUpon>UserControlDaysAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\calendarWorksAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\calendarWorksAdminForm.Designer.cs">
+      <DependentUpon>calendarWorksAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\calendarWorksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\calendarWorksForm.Designer.cs">
+      <DependentUpon>calendarWorksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\eventCalendarWorksAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\eventCalendarWorksAdminForm.Designer.cs">
+      <DependentUpon>eventCalendarWorksAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\eventCalendarWorksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\eventCalendarWorksForm.Designer.cs">
+      <DependentUpon>eventCalendarWorksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksBlankAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksBlankAdmin.Designer.cs">
+      <DependentUpon>UserControlWorksBlankAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksBlank.Designer.cs">
+      <DependentUpon>UserControlWorksBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksDaysAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksDaysAdmin.Designer.cs">
+      <DependentUpon>UserControlWorksDaysAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\works\UserControlWorksDays.Designer.cs">
+      <DependentUpon>UserControlWorksDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\menuAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\menuAdminForm.Designer.cs">
+      <DependentUpon>menuAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\messAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\messAdminForm.Designer.cs">
+      <DependentUpon>messAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\messForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\messForm.Designer.cs">
+      <DependentUpon>messForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\bmiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\bmiForm.Designer.cs">
       <DependentUpon>bmiForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\calculatorForm.cs">
+    <Compile Include="forms\personalForms\bmrForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\calculatorForm.Designer.cs">
-      <DependentUpon>calculatorForm.cs</DependentUpon>
+    <Compile Include="forms\personalForms\bmrForm.Designer.cs">
+      <DependentUpon>bmrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\bodyweightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\bodyweightForm.Designer.cs">
+      <DependentUpon>bodyweightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\dataUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\dataUserForm.Designer.cs">
+      <DependentUpon>dataUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\menuUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\menuUserForm.Designer.cs">
+      <DependentUpon>menuUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Form1.cs">
       <SubType>Form</SubType>
@@ -115,34 +235,175 @@
     <Compile Include="forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\personalDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalDataForm.Designer.cs">
+      <DependentUpon>personalDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\duoweightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\duoweightForm.Designer.cs">
+      <DependentUpon>duoweightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\fatcontentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\fatcontentForm.Designer.cs">
+      <DependentUpon>fatcontentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\terForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\terForm.Designer.cs">
+      <DependentUpon>terForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\personalForms\poniterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\personalForms\poniterForm.Designer.cs">
+      <DependentUpon>poniterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\setAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\setAdminForm.Designer.cs">
+      <DependentUpon>setAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\settingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\settingsForm.Designer.cs">
+      <DependentUpon>settingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\sumForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\sumForm.Designer.cs">
       <DependentUpon>sumForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\summaryForm.cs">
+    <Compile Include="forms\personalForms\summaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\summaryForm.Designer.cs">
+    <Compile Include="forms\personalForms\summaryForm.Designer.cs">
       <DependentUpon>summaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\calendar\diet\UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="forms\bmiForm.resx">
+    <EmbeddedResource Include="forms\calendar\diet\calendarAdminForm.resx">
+      <DependentUpon>calendarAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\calendarForm.resx">
+      <DependentUpon>calendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\eventCalendarAdminForm.resx">
+      <DependentUpon>eventCalendarAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\eventCalendarForm.resx">
+      <DependentUpon>eventCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\UserControlDaysAdmin.resx">
+      <DependentUpon>UserControlDaysAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\calendarWorksAdminForm.resx">
+      <DependentUpon>calendarWorksAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\calendarWorksForm.resx">
+      <DependentUpon>calendarWorksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\eventCalendarWorksAdminForm.resx">
+      <DependentUpon>eventCalendarWorksAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\eventCalendarWorksForm.resx">
+      <DependentUpon>eventCalendarWorksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\UserControlWorksBlankAdmin.resx">
+      <DependentUpon>UserControlWorksBlankAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\UserControlWorksBlank.resx">
+      <DependentUpon>UserControlWorksBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\UserControlWorksDaysAdmin.resx">
+      <DependentUpon>UserControlWorksDaysAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\works\UserControlWorksDays.resx">
+      <DependentUpon>UserControlWorksDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\menuAdminForm.resx">
+      <DependentUpon>menuAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\messAdminForm.resx">
+      <DependentUpon>messAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\messForm.resx">
+      <DependentUpon>messForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\bmiForm.resx">
       <DependentUpon>bmiForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\calculatorForm.resx">
-      <DependentUpon>calculatorForm.cs</DependentUpon>
+    <EmbeddedResource Include="forms\personalForms\bmrForm.resx">
+      <DependentUpon>bmrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\bodyweightForm.resx">
+      <DependentUpon>bodyweightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\dataUserForm.resx">
+      <DependentUpon>dataUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\menuUserForm.resx">
+      <DependentUpon>menuUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalDataForm.resx">
+      <DependentUpon>personalDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\duoweightForm.resx">
+      <DependentUpon>duoweightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\fatcontentForm.resx">
+      <DependentUpon>fatcontentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\terForm.resx">
+      <DependentUpon>terForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\personalForms\poniterForm.resx">
+      <DependentUpon>poniterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\setAdminForm.resx">
+      <DependentUpon>setAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\settingsForm.resx">
+      <DependentUpon>settingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\sumForm.resx">
       <DependentUpon>sumForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\summaryForm.resx">
+    <EmbeddedResource Include="forms\personalForms\summaryForm.resx">
       <DependentUpon>summaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\calendar\diet\UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,9 +429,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pexels-victor-freitas-841130.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
