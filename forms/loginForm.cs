@@ -13,7 +13,7 @@ namespace Program.forms
 {
     public partial class loginForm : Form
     {
-        String connString = "server=localhost;database=db_calendar;uid=root;pwd=";
+        String connString = "server=sql11.freemysqlhosting.net;database=sql11498483;uid=sql11498483;pwd=vMMyxj1Q7l";
         public static string _login;
         public static string _base;
 

@@ -13,7 +13,7 @@ namespace Program.forms.calendar.works
 {
     public partial class UserControlWorksBlankAdmin : UserControl
     {
-        String connString = "server=localhost;database=db_calendar;uid=root;pwd=";
+        String connString = "server=sql11.freemysqlhosting.net;database=sql11498483;uid=sql11498483;pwd=vMMyxj1Q7l";
         public static string static_day21;
 
         public UserControlWorksBlankAdmin()

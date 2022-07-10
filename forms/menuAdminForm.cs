@@ -10,7 +10,7 @@ namespace Program
 {
     public partial class menuAdminForm : Form
     {
-        String connString = "server=localhost;database=db_calendar;uid=root;pwd=";
+        String connString = "server=sql11.freemysqlhosting.net;database=sql11498483;uid=sql11498483;pwd=vMMyxj1Q7l";
         private IconButton currBtn;
         private Panel leftBdr;
         private Form formActivate;

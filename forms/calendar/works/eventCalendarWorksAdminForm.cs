@@ -13,7 +13,7 @@ namespace Program.forms.calendar.works
 {
     public partial class eventCalendarWorksAdminForm : Form
     {
-        String connString = "server=localhost;database=db_calendar;uid=root;pwd=";
+        String connString = "server=sql11.freemysqlhosting.net;database=sql11498483;uid=sql11498483;pwd=vMMyxj1Q7l";
 
         public eventCalendarWorksAdminForm(string _event, string _value, int month, int day, int year)
         {
