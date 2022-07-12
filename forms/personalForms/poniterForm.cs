@@ -22,13 +22,12 @@ namespace Program.forms
         {
             label2.Text = menuUserForm.SummaryUser.data5;
 
-            textBoxBmi.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            textBoxBmi.Text = "Waist to Height Ratio – W sytuacji, gdy wskaźnik będzie na poziomie 49 lub wyższy " +
+                "występuje zwiększone ryzyko zachorowań na choroby układu krążenia, cukrzycę itp, na które narażone " +
+                "są też bardziej osoby o typie budowy jabłka aniżeli gruszki. Mówi się, że WHtR to dokładniejszy " +
+                "wskaźnik, niż BMI. Jest to wskaźnik oceniający stan odżywienia, zaraz obok BMI oraz WHR. Pomiar ten" +
+                " bierze pod uwagę okolice brzucha(liczony obwód talii), czyli miejsce, w którym gromadzi się najwięcej" +
+                " tkanki tłuszczowej.";
         }
     }
 }

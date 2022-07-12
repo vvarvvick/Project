@@ -235,35 +235,35 @@ namespace Program.forms
             this.textBox_M.Location = new System.Drawing.Point(45, 140);
             this.textBox_M.Name = "textBox_M";
             this.textBox_M.Size = new System.Drawing.Size(100, 20);
-            this.textBox_M.TabIndex = 6;
+            this.textBox_M.TabIndex = 12;
             // 
             // textBox_U
             // 
             this.textBox_U.Location = new System.Drawing.Point(45, 220);
             this.textBox_U.Name = "textBox_U";
             this.textBox_U.Size = new System.Drawing.Size(100, 20);
-            this.textBox_U.TabIndex = 5;
+            this.textBox_U.TabIndex = 13;
             // 
             // textBox_D
             // 
             this.textBox_D.Location = new System.Drawing.Point(45, 300);
             this.textBox_D.Name = "textBox_D";
             this.textBox_D.Size = new System.Drawing.Size(100, 20);
-            this.textBox_D.TabIndex = 4;
+            this.textBox_D.TabIndex = 14;
             // 
             // textBox_Bd
             // 
             this.textBox_Bd.Location = new System.Drawing.Point(45, 380);
             this.textBox_Bd.Name = "textBox_Bd";
             this.textBox_Bd.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Bd.TabIndex = 3;
+            this.textBox_Bd.TabIndex = 15;
             // 
             // textBox_Bm
             // 
             this.textBox_Bm.Location = new System.Drawing.Point(45, 60);
             this.textBox_Bm.Name = "textBox_Bm";
             this.textBox_Bm.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Bm.TabIndex = 2;
+            this.textBox_Bm.TabIndex = 11;
             // 
             // label10
             // 

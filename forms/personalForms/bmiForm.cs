@@ -23,21 +23,14 @@ namespace Program.forms.personalForms
             label2.Text = menuUserForm.SummaryUser.data1;
             label3.Text = menuUserForm.SummaryUser.data2;
 
-            textBoxBmi.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            textBoxBmi.Text = "Body Mass Index to wskaźnik masy ciała. Wykorzystywany jest przede wszystkim do oceny " +
+                "ryzyka pojawienia się groźnych chorób: miażdżycy, choroby niedokrwiennej serca, udaru mózgu, czy " +
+                "nawet nowotworów. Większość tych chorób jest związana z otyłością i dlatego kalkulator BMI to tak " +
+                "przydatne narzędzie.";
 
-            textBoxBmiprmie.Text= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            textBoxBmiprmie.Text= "Pozwala obrazowo ukazać problem nadwagi i szybko wyliczyć ile kilogramów powinien " +
+                "schudnąć, aby jego waga wróciła do normy. Np. BMI Prime wynoszące 1,2 oznacza 20% nadmiaru masy " +
+                "ciała. Jeśli otrzymana liczba mieści się w przedziale 0,74 do 1 waga mieści się w normie.";
         }
     }
 }

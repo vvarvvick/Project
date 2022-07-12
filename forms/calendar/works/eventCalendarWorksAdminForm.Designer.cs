@@ -53,7 +53,7 @@ namespace Program.forms.calendar.works
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(326, 216);
-            this.textBox3.TabIndex = 12;
+            this.textBox3.TabIndex = 2;
             // 
             // buttonSave
             // 
@@ -88,7 +88,7 @@ namespace Program.forms.calendar.works
             this.textBox2.Location = new System.Drawing.Point(12, 76);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(326, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
@@ -98,7 +98,7 @@ namespace Program.forms.calendar.works
             this.textBox1.Size = new System.Drawing.Size(70, 20);
             this.textBox1.TabIndex = 7;
             // 
-            // eventCalendarWorksForm
+            // eventCalendarWorksAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -110,7 +110,7 @@ namespace Program.forms.calendar.works
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "eventCalendarWorksForm";
+            this.Name = "eventCalendarWorksAdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "eventCalendarWorksForm";
             this.Load += new System.EventHandler(this.eventCalendarWorksAdminForm_Load);

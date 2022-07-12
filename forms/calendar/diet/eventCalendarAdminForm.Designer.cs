@@ -88,7 +88,7 @@ namespace Program.forms
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(326, 216);
-            this.textBox3.TabIndex = 4;
+            this.textBox3.TabIndex = 2;
             // 
             // label3
             // 
@@ -99,7 +99,7 @@ namespace Program.forms
             this.label3.TabIndex = 6;
             this.label3.Text = "Treść";
             // 
-            // eventCalendarForm
+            // eventCalendarAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@ namespace Program.forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "eventCalendarForm";
+            this.Name = "eventCalendarAdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "eventCalendarForm";
             this.Load += new System.EventHandler(this.eventCalendarAdminForm_Load);

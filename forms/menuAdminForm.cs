@@ -24,7 +24,9 @@ namespace Program
             InitializeComponent();
             leftBdr = new Panel();
             leftBdr.Size = new Size(7, 40);
-            panel1.BackColor = Color.FromArgb(200, 39, 41, 61);
+            panel1.BackColor = Color.FromArgb(220, 39, 41, 61);
+            label2.BackColor = Color.FromArgb(0, 39, 41, 61);
+            label1.BackColor = Color.FromArgb(0, 39, 41, 61);
             panelMenu.Controls.Add(leftBdr);
             MessageBox.Show("Hello Admin!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             set();

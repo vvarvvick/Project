@@ -67,7 +67,7 @@ namespace Program.forms
             this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Medkit;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.ListOl;
             this.iconButton7.IconColor = System.Drawing.Color.White;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 26;
@@ -258,7 +258,7 @@ namespace Program.forms
             this.iconButtonClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonClient.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.iconButtonClient.ForeColor = System.Drawing.Color.White;
-            this.iconButtonClient.IconChar = FontAwesome.Sharp.IconChar.Medkit;
+            this.iconButtonClient.IconChar = FontAwesome.Sharp.IconChar.PollH;
             this.iconButtonClient.IconColor = System.Drawing.Color.White;
             this.iconButtonClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonClient.IconSize = 26;

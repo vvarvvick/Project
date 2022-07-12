@@ -38,7 +38,7 @@ namespace Program.forms
             cmd.Parameters.AddWithValue("event", textBox2.Text);
             cmd.Parameters.AddWithValue("value", textBox3.Text);
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Saved");
+            MessageBox.Show("Data Saved!!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
             cmd.Dispose();
             conn.Close();
 

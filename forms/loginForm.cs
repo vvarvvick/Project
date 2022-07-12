@@ -29,42 +29,51 @@ namespace Program.forms
             string pass="";
             int access = 0;
 
-            MySqlConnection conn = new MySqlConnection(connString);
+            try
+            {
+                MySqlConnection conn = new MySqlConnection(connString);
 
-            conn.Open();
-            string sql = "SELECT password, access FROM users WHERE login= ?";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("login", textBox1.Text);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                pass = reader["password"].ToString();
-                access = int.Parse(reader["access"].ToString());
-            }
-            reader.Dispose();
-            cmd.Dispose();
-            conn.Close();
+                conn.Open();
+                string sql = "SELECT password, access FROM users WHERE login= ?";
+                MySqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = sql;
+                cmd.Parameters.AddWithValue("login", textBox1.Text);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    pass = reader["password"].ToString();
+                    access = int.Parse(reader["access"].ToString());
+                }
+                reader.Dispose();
+                cmd.Dispose();
+                conn.Close();
 
-            if (pass == textBox2.Text)
-            {
-                if (access == 1)
+                if (pass == textBox2.Text)
                 {
-                    _login = textBox1.Text;
-                    setData(_login);
-                    mainPage.Openchildform(new menuUserForm());
-                    this.Close();
+                    if (access == 1)
+                    {
+                        _login = textBox1.Text;
+                        setData(_login);
+                        mainPage.Openchildform(new menuUserForm());
+                        this.Close();
+                    }
+                    if (access == 2)
+                    {
+                        mainPage.Openchildform(new menuAdminForm());
+                        this.Close();
+                    }
                 }
-                if (access == 2)
+                else
                 {
-                    mainPage.Openchildform(new menuAdminForm());
-                    this.Close();
+                    MessageBox.Show("Bad Login or Pass!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Bad Login or Pass!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Information", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                return;
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -99,6 +108,14 @@ namespace Program.forms
             reader.Dispose();
             cmd.Dispose();
             conn.Close();
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            if (textBox2.PasswordChar == '*')
+                textBox2.PasswordChar = '\0';
+            else
+                textBox2.PasswordChar = '*';
         }
     }
 }

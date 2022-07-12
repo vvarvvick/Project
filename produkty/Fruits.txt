@@ -1,0 +1,18 @@
+avokado, 160 kcal
+agrest, 41 kcal
+jabłko, 46 kcal
+pomarańcza, 48 kcal
+brzoskwinia, 46 kcal
+banan, 88 kcal
+ananas,50 kcal
+truskawki, 35 kcal
+śliwki, 30 kcal
+wiśnie, 50 kcal
+winogrono, 70 kcal
+grejpfruit, 42 kcal
+arbuz, 36 kcal
+borówki, 57 kcal
+mango, 60 kcal
+porzeczki, 25 kcal 
+kiwi, 61 kcal
+gruszka, 54 kcal

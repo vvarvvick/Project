@@ -14,6 +14,11 @@ namespace Program
         {
             InitializeComponent();
             Openchildform(new loginForm());
+            label1.BackColor = Color.FromArgb(0, 88, 44, 55);
+            label2.BackColor = Color.FromArgb(0, 88, 44, 55);
+            label3.BackColor = Color.FromArgb(0, 88, 44, 55);
+            label4.BackColor = Color.FromArgb(0, 88, 44, 55);
+            label5.BackColor = Color.FromArgb(0, 88, 44, 55);
             panel1.BackColor = Color.FromArgb(140, 88, 44, 55);
             panel2.BackColor = Color.FromArgb(140, 88, 44, 55);
         }

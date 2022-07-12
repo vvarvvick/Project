@@ -109,5 +109,95 @@ namespace Program.forms
             cmd.Dispose();
             conn.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection conn = new MySqlConnection(connString);
+
+            conn.Open();
+            string sql = "SELECT login FROM users;";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = sql;
+            MySqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["login"].ToString() == textBox4.Text)
+                {
+                    checkUser();
+                    return;
+                }
+            }
+            reader.Dispose();
+            cmd.Dispose();
+            conn.Close();
+
+            MessageBox.Show("User Not Found!!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void delCalendar()
+        {
+            MySqlConnection conn = new MySqlConnection(connString);
+
+            conn.Open();
+            string sql = "DROP TABLE "+textBox4.Text+"_calendar";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+        private void delMess()
+        {
+            MySqlConnection conn = new MySqlConnection(connString);
+
+            conn.Open();
+            string sql = "DROP TABLE " + textBox4.Text + "_mess";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+        private void delWorks()
+        {
+            MySqlConnection conn = new MySqlConnection(connString);
+
+            conn.Open();
+            string sql = "DROP TABLE " + textBox4.Text + "_works";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+        private void checkUser()
+        {
+            DialogResult res = MessageBox.Show("Confirm Delete User!!", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (res == DialogResult.Yes)
+            {
+                MySqlConnection conn = new MySqlConnection(connString);
+
+                conn.Open();
+                string sql = "DELETE FROM users WHERE login = @log";
+                MySqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = sql;
+                cmd.Parameters.AddWithValue("@log", textBox4.Text);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                conn.Close();
+
+                delCalendar();
+                delMess();
+                delWorks();
+
+                textBox4.Text = "";
+                MessageBox.Show("Data Deleted!!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

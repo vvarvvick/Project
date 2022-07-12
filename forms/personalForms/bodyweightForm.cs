@@ -23,21 +23,18 @@ namespace Program.forms.personalForms
             label2.Text = menuUserForm.SummaryUser.data6;
             label3.Text = menuUserForm.SummaryUser.data7;
 
-            textBoxBmi.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            textBoxBmi.Text = "Należna masa ciała - jest to prawidłowa, pożądana masa ciała, która pozwala na odpowiednie " +
+                "funkcjonowania człowieka oraz zachowanie zdrowia. Wzory na należna masę ciała nie są dla każdego. " +
+                "Najlepiej sprawdza się u osób z przeciętną budowie ciała. Wynik będzie niewiarygodny w przypadku " +
+                "sportowców czy kobiet w ciąży. Każdy wskaźnik masy ciała należy traktować orientacyjnie oraz " +
+                "bardzo indywidualnie.";
 
-            textBoxBmiprmie.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            textBoxBmiprmie.Text = "Wagę idealną uzyskuje się poprzez odjęcie od wagi należnej: 10% jej wartości dla " +
+                "mężczyzn (mnożymy przez 0,9) oraz 15% dla kobiet (mnożymy przez 0,85). Z tego wynika prosty wniosek, " +
+                "że waga prawie idealna to przedział między wagą idealną, a należną. Natomiast w drugą stronę sprawa " +
+                "wygląda następująco: pomiędzy wagą należną, a nadwagą mamy wagę akceptowalną. Nadwaga zaczyna " +
+                "się w momencie kiedy masa ciała przewyższa o 10% wagę należną, z kolei otyłość wtedy gdy waga " +
+                "należna zostanie przekroczona o 20% .";
         }
     }
 }

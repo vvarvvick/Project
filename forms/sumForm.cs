@@ -25,7 +25,7 @@ namespace Program.forms
 
             index = 0;
             calorie = 0;
-            catMenu = new string[4];
+            catMenu = new string[7];
 
             setArray();
             Import(catMenu[index]);
@@ -33,10 +33,13 @@ namespace Program.forms
 
         private void setArray()
         {
-            catMenu[0] = "Sniadanie";
-            catMenu[1] = "Lekkie";
-            catMenu[2] = "Przekaski";
-            catMenu[3] = "Obiady";
+            catMenu[0] = "Meat&Fish";
+            catMenu[1] = "Dairy";
+            catMenu[2] = "Drinks";
+            catMenu[3] = "Fruits";
+            catMenu[3] = "Bread";
+            catMenu[3] = "Candy";
+            catMenu[3] = "Vegetables";
         }
 
         private void Import(string path)
@@ -92,6 +95,9 @@ namespace Program.forms
                 }
                 writetext.WriteLine("Suma kalorii = "+label_Suma.Text);
             }
+            calorie = 0;
+            listBox2.Items.Clear();
+            label_Suma.Text = "";
         }
 
         private void set()
@@ -129,9 +135,25 @@ namespace Program.forms
         private void clear()
         {
             listBox1.Items.Clear();
-            listBox2.Items.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             calorie = 0;
+            listBox2.Items.Clear();
             label_Suma.Text = "";
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader sr = new StreamReader(openFileDialog.FileName);
+                while (!sr.EndOfStream)
+                {
+                    listBox2.Items.Add(sr.ReadLine());
+                }
+                sr.Close();
+            }
         }
     }
 }

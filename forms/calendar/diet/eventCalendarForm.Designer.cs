@@ -88,7 +88,7 @@ namespace Program.forms
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(326, 216);
-            this.textBox3.TabIndex = 4;
+            this.textBox3.TabIndex = 2;
             // 
             // label3
             // 

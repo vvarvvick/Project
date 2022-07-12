@@ -32,6 +32,7 @@ namespace Program.forms.personalForms
             this.textBoxBmi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxBmi
@@ -67,11 +68,22 @@ namespace Program.forms.personalForms
             this.label1.TabIndex = 6;
             this.label1.Text = "Twoja zawartość tłuszczu wynosi: ";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(377, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "(%)";
+            // 
             // fatcontentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 561);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxBmi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -87,5 +99,6 @@ namespace Program.forms.personalForms
         private System.Windows.Forms.TextBox textBoxBmi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -1,0 +1,16 @@
+cola cola, 42 kcal
+woda niegazowana, 0 kcal
+woda gazowana, 0 kcal
+lemoniada, 25 kcal
+gazowane napoje owocowe, 50 kcal
+kakao, 400 kcal
+kawa bez cukru, 1 kcal
+latte, 165 kcal
+cappuciono, 350 kcal
+mocha, 330 kcal
+frappe, 410 kcal
+Irish, 210 kcal
+herbata bez cukru, 1 kcal
+sok z owoców, 55 kcal
+sok warzywny, 15 kcal
+czekodala pitna, 240 kcal

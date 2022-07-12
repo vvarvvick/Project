@@ -35,6 +35,7 @@ namespace Program.forms.personalForms
             this.textBoxBmiprmie = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -103,11 +104,22 @@ namespace Program.forms.personalForms
             this.label4.TabIndex = 3;
             this.label4.Text = "Twój wynik BMI Prime wynosi: ";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(296, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "(kg/m^2)";
+            // 
             // bmiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(817, 658);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxBmiprmie);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -129,5 +141,6 @@ namespace Program.forms.personalForms
         private System.Windows.Forms.TextBox textBoxBmiprmie;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

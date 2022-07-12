@@ -12,26 +12,21 @@ namespace Program
         private IconButton currBtn;
         private Panel leftBdr;
         private Form formActivate;
+        private string[] mot;
 
         public menuUserForm()
         {
             InitializeComponent();
+            mot = new string[10];
             leftBdr = new Panel();
             leftBdr.Size = new Size(7, 40);
             panelMenu.Controls.Add(leftBdr);
+            panel1.BackColor = Color.FromArgb(200, 39, 41, 61);
+            label2.BackColor = Color.FromArgb(0, 39, 41, 61);
+            label1.BackColor = Color.FromArgb(0, 39, 41, 61);
+            label3.BackColor = Color.FromArgb(0, 39, 41, 61);
             MessageBox.Show("Hello User!!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            set();
-        }
-
-        private void set()
-        {
-            textBox1.Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an " +
-                "unknown printer took a galley of type and scrambled it to make a type specimen book. It " +
-                "has survived not only five centuries, but also the leap into electronic typesetting, remaining " +
-                "essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets " +
-                "containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
-                "Aldus PageMaker including versions of Lorem Ipsum.";
+            setMot();
         }
 
         public struct DataUser
@@ -193,6 +188,25 @@ namespace Program
             iconPictureBoxCurrentIcon.IconChar = IconChar.Home;
             iconPictureBoxCurrentIcon.IconColor = Color.White;
             labelCurrentTitle.Text = "Home";
+        }
+
+        private void setMot()
+        {
+            int index = 1;
+            Random r = new Random();
+            int i = r.Next(0, 10);
+
+            for (int idx = 0; idx < 10; idx++)
+            {
+                System.IO.StreamReader sr = new System.IO.StreamReader("../../motywacje/" + "mot" + index + ".txt");
+                while (!sr.EndOfStream)
+                {
+                    mot[idx] = (sr.ReadLine().ToString());
+                }
+                sr.Close();
+                index++;
+            }
+            label3.Text = mot[i];
         }
     }
 }
